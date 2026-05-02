@@ -17,7 +17,10 @@
             Problema3 problema3 = new Problema3();
             string comparar = problema3.CompararCopias(1234, productprueba);
             Console.WriteLine(comparar);
-
+            //Prueba de problema 4
+            Problema4 problema4 = new Problema4();
+            double promedio = problema4.CalcularPromedio(8, 6, null);
+            Console.WriteLine(promedio);
 
 
         }
