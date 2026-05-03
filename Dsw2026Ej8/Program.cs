@@ -32,7 +32,21 @@
             WholesaleSale wholesale = new WholesaleSale(1000m);
             Console.WriteLine("Precio Final:"+problema5.ObtenerImporteFinal(wholesale));
 
+            //Prueba de problema 6
+            Problema6 problema6 = new Problema6();
+            string codigo = problema6.NormalizarCodigoProducto(" ab 123 x");
+            Console.WriteLine("Código Normalizado: "+codigo);
 
+            Problema6 problema66 = new Problema6();
+            string codigo1 = problema66.NormalizarCodigoProducto(" ee 7474 z");
+            Console.WriteLine("Código Normalizado: "+codigo1);
+
+            Problema6 problem = new Problema6();
+            string codigo2 = problem.NormalizarCodigoProducto(" ttx 8282 vv");
+            Console.WriteLine("Código Normalizado: "+ codigo2);
+
+            string codigoNull = problema6.NormalizarCodigoProducto(null);
+            Console.WriteLine(codigoNull);
 
         }
     }
